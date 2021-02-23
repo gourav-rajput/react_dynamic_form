@@ -1,0 +1,57 @@
+{
+	"properties": {
+		"name": {
+			"label": "Name",
+			"placeholder": "Enter Name",
+			"type": "text",
+			"value": "",
+			"validation": ["required"],
+			"valid": false,
+			"id": "name",
+			"showError": false
+		},
+		"dob": {
+			"label": "DOB",
+			"type": "date",
+			"value": "",
+			"validation": ["required"],
+			"valid": false,
+			"id": "dob",
+			"showError": false
+		},
+		"address": {
+			"properties": {
+				"state": {
+					"label": "State",
+					"type": "text",
+					"options": ["Haryana", "Delhi", "Uttar Pradesh", "Punjab"],
+					"value": "",
+					"validation": ["required"],
+					"valid": false,
+					"id": "address-properties-state",
+					"showError": false
+				},
+				"pincode": {
+					"label": "Pin Code",
+					"placeholder": "Enter Pin Code",
+					"type": "text",
+					"value": "",
+					"validation": ["required", "minLength(6)"],
+					"valid": false,
+					"id": "address-properties-pincode",
+					"showError": false
+				}
+			}
+		},
+		"gender": {
+			"label": "Gender",
+			"type": "text",
+			"value": "",
+			"options": ["Male", "Female"],
+			"validation": ["required"],
+			"valid": false,
+			"id": "gender",
+			"showError": false
+		}
+	}
+}
